@@ -1,6 +1,11 @@
 import React from "react";
+import QuestionForm from "./../QuestionForm/index";
 function App() {
-  return <div>Test</div>;
+  return (
+    <>
+      <QuestionForm />{" "}
+    </>
+  );
 }
 
 export default App;
