@@ -1,11 +1,25 @@
 import React from "react";
 import QuestionForm from "./../QuestionForm/index";
-function App() {
+import { Provider } from 'react-redux'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+const App = () => {
+  const applicationRoutes = (
+    <Switch>
+      <Route path="/" component={AuthScene} exact={true} />
+      <Route path="/auth" component={AuthScene} />
+      <Route path="/cabinet" component={MainScene} />
+    </Switch>
+  )
+
   return (
-    <>
-      <QuestionForm />{" wdawd "}
-    </>
-  );
+    <Provider store={store}>
+      <BrowserRouter>{applicationRoutes}</BrowserRouter>
+    </Provider>
+    // <>
+    //   <QuestionForm />
+    // </>
+  )
 }
 
 export default App;
