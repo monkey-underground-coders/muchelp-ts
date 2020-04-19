@@ -1,14 +1,16 @@
 import React from "react";
-import QuestionForm from "./../QuestionForm/index";
 import { Provider } from 'react-redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import GuestScene from "../../scenes/Guest";
+import CabinetScene from "../../scenes/Cabinet";
+import store from "../../store";
 
 const App = () => {
   const applicationRoutes = (
     <Switch>
-      <Route path="/" component={AuthScene} exact={true} />
-      <Route path="/auth" component={AuthScene} />
-      <Route path="/cabinet" component={MainScene} />
+      <Route path="/" component={GuestScene} exact={true} />
+      <Route path="/guest" component={GuestScene} />
+      <Route path="/cabinet" component={CabinetScene} />
     </Switch>
   )
 
@@ -16,9 +18,6 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>{applicationRoutes}</BrowserRouter>
     </Provider>
-    // <>
-    //   <QuestionForm />
-    // </>
   )
 }
 
