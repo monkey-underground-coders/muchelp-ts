@@ -1,9 +1,7 @@
 import React from "react";
-import { Provider } from 'react-redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import GuestScene from "../../scenes/Guest";
 import CabinetScene from "../../scenes/Cabinet";
-import store from "../../store";
 
 const App = () => {
   const applicationRoutes = (
@@ -15,9 +13,7 @@ const App = () => {
   )
 
   return (
-    <Provider store={store}>
-      <BrowserRouter>{applicationRoutes}</BrowserRouter>
-    </Provider>
+    <BrowserRouter>{applicationRoutes}</BrowserRouter>
   )
 }
 
