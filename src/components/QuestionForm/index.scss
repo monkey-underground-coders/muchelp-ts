@@ -1,4 +1,17 @@
 .QuestionForm__content {
-    margin: 10% auto;
-    width: 30%;
+    margin: 1% 10%;
+    width: 70%;
+
+    .QuestionForm__content_form_items {
+        font-size: 20;
+
+        .QuestionForm__content_form_items_text {
+            max-height: 17rem;
+
+            input {
+                text-align: none;
+                height: 15.8rem;
+            }
+        }
+    }
 }
