@@ -5,6 +5,7 @@ import "./index.scss";
 import QuestionForm from "../../components/QuestionForm";
 import Navbar from "../../components/Navbar";
 import { Layout, Col, Row, Card } from "antd";
+import QuestionStatus from "../../components/QuestionStatus";
 const { Content } = Layout;
 
 interface GuestSceneProps {}
@@ -17,7 +18,7 @@ const GuestScene = (props: GuestSceneProps) => {
         <Content>
           <Col className="pt-4" span="12" offset="6">
             <Card bordered={false}>
-              <QuestionForm />
+              <QuestionStatus />
             </Card>
           </Col>
         </Content>

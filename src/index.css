@@ -64,7 +64,12 @@
 .mb-4 {
   margin-bottom: 1rem;
 }
-
+.default-cursor {
+  cursor: default
+}
+.no-cursor {
+  cursor: none;
+}
 body {
   margin: 0;
   font-family: "gotham-pro", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
