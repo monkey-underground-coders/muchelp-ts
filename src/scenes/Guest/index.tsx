@@ -18,7 +18,7 @@ const GuestScene = (props: GuestSceneProps) => {
         <Content>
           <Col className="pt-4" span="12" offset="6">
             <Card bordered={false}>
-              <QuestionStatus />
+              <QuestionForm />
             </Card>
           </Col>
         </Content>

@@ -6,6 +6,7 @@ import Input from "antd/lib/input/Input";
 import "./index.scss";
 const { Content } = Layout;
 interface AuthProps {}
+
 const Auth = (props: AuthProps) => {
   return (
     <Row>
